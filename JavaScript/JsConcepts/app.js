@@ -5,6 +5,7 @@ const ASYNC_FUNC = async () => {
 };
 
 ASYNC_FUNC();
+
 console.log('This runs Immediatley');
 
 let myPromise = new Promise((resolve, reject) => {
@@ -22,13 +23,23 @@ myPromise
 
 
 
-function result(name){
+function result(name) {
   let username = `Hello ${name}`
   return username;
 }
 
-function callback(result){
-  
+function callback(data) {
+  return data;
 }
 
-result();
+let outPut = callback(result('Zaid'));
+console.log(outPut);
+
+
+// let foo = 10;
+// (
+//   function () {
+//     console.log(foo);
+//     let foo = 20; // here hoisitng does not work because of the lexical scops 
+//   }
+// )();
