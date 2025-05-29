@@ -22,6 +22,7 @@ myPromise
 
 
 
+// CallBack
 
 function result(name) {
   let username = `Hello ${name}`
