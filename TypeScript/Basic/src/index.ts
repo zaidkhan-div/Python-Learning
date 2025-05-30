@@ -48,3 +48,10 @@
 // Tupple
 // let unknown: [string, number, boolean] = ["Test", 123, false];
 // console.log(unknown);
+
+
+function checkFunc(item: string, age: number) {
+    console.log(`Hello ${item}`);
+}
+
+checkFunc("Zaidkhan", 19) // if i dont pass arguments as many paramtes i have in my function this will make a eroor
