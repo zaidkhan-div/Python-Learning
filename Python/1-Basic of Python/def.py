@@ -61,21 +61,21 @@ career={my_dict['career']}
  """)
 
 
-# Array in the Python is called List 
+# # Array in the Python is called List 
 
-list = ['Zaidkhan',12,'Computer','Karachi']
+# list = ['Zaidkhan',12,'Computer','Karachi']
+# # print(list)
+# # print(list[0])
+
+# # list.append(my_dict)
+# # list.pop()
+# # list.clear()
+# # list.copy()
+# # list.count()
+# # list.reverse()
+# # nums = [1,4,5,6,7,2,3]
+# # nums.sort()            Sorting is only applicbale on Number ->Int
+# # list.index(1,2)
+# list.insert('zaid')
+
 # print(list)
-# print(list[0])
-
-# list.append(my_dict)
-# list.pop()
-# list.clear()
-# list.copy()
-# list.count()
-# list.reverse()
-# nums = [1,4,5,6,7,2,3]
-# nums.sort()            Sorting is only applicbale on Number ->Int
-# list.index(1,2)
-list.insert('zaid')
-
-print(list)

@@ -55,3 +55,10 @@ function checkFunc(item: string, age: number) {
 }
 
 checkFunc("Zaidkhan", 19) // if i dont pass arguments as many paramtes i have in my function this will make a eroor
+
+
+// Generics
+function identity<Type>(arg: Type): Type {
+    return arg;
+}
+// We’ve now added a type variable Type to the identity function. This Type allows us to capture the type the user provides(e.g.number), so that we can use that information later.Here, we use Type again as the return type.On inspection, we can now see the same type is used for the argument and the return type.This allows us to traffic that type information in one side of the function and out the other.
