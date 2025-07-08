@@ -38,3 +38,17 @@ console.log(names ?? "Default"); // "Default"
 
 let score = 0;
 console.log(score ?? 10); // 0 (not 10!)
+
+
+let arr = [1, 2, 3, 5, 6, 7, 8, 9];
+console.log(arr.slice(-1));
+
+let obj = {
+    a: 1,
+    b: 2,
+    c: 3,
+    d: 4,
+    f: 5
+}
+const result2 = Object.values(obj); // Object.keys
+console.log(result2, " Object");
