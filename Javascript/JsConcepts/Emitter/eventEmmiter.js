@@ -32,3 +32,20 @@ window.addEventListener('storage', (e) => {
         console.log('Event received in Tab B');
     }
 });
+
+
+// var x = 1;
+// a();
+// b();
+
+// console.log(x)
+
+// function a(){
+//     var x = 10;
+//     console.log(x)
+// }
+
+// function b(){
+//     let x = 20;
+//     console.log(x)
+// }

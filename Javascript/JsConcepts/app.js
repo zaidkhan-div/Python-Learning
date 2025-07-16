@@ -1,25 +1,3 @@
-const ASYNC_FUNC = async () => {
-  await setTimeout(() => {
-    console.log('Async Done');
-  }, 1000)
-};
-
-ASYNC_FUNC();
-
-console.log('This runs Immediatley');
-
-let myPromise = new Promise((resolve, reject) => {
-  let success = true;
-  if (success) {
-    resolve('Success');
-  } else {
-    reject('Error');
-  }
-});
-myPromise
-  .then(result => console.log(result))  // Runs if resolved
-  .catch(error => console.log(error));  // Runs if rejected
-
 // CallBack
 
 function result(name) {
@@ -42,3 +20,53 @@ console.log(outPut);
 //     let foo = 20; // here hoisitng does not work because of the lexical scops 
 //   }
 // )();
+(
+  function () {
+    console.log('Direct envoked the fucntion')
+  }
+)
+
+var a = 100;
+const b = 20;
+{
+  var a = 10;
+  const b = 20;
+  let c = 30;
+  // {} inside this brakcet const & let are Blocked scope
+}
+console.log(a) // this is called shadowind we will access a 
+
+
+// ======================= Closure ============= //
+
+function createCounter() {
+  let count = 0; // This 'count' variable is part of the lexical environment
+
+  return function () { // This is the inner function (the closure)
+    count++;
+    console.log(count); // They still remeber their lexical Scope
+  };
+}
+
+const myCounter = createCounter(); // 'myCounter' now holds the inner function
+myCounter(); // Output: 1
+myCounter(); // Output: 2
+// .....
+
+// Uses of Closures:
+// -Module Design Pattern
+// -Currying
+// -Function like once
+// -memoize
+// -maintaining state in async world
+// -setTimeOut
+// -Iterators
+// -and many more...
+
+// ========= Currying =======
+function curriedAdd(a) {
+  return function (b) {
+    return a + b
+  }
+}
+console.log(curriedAdd(1)(10)) // this is called currying function

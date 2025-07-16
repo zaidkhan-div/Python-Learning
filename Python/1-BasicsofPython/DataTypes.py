@@ -6,7 +6,8 @@
 # 4.Set
 # 5.Sequence Type
 
-# Types of Numeric  a.Integer
+# ================== 1.Types of Numeric  a.Integer ============= #
+
 # Whole numbers, positive or negative, without decimals.
 num_int: int = 10.39
 
@@ -23,11 +24,11 @@ num_Complex: int = 2+3j
 # print(num_Complex.real) 
 # print(num_Complex.imag) 
 
-# ================== Boolean =================== #
+# ================== 2.Boolean =================== #
 # 2.Boolean Represents True or False.
 is_python_fun: bool = True #False 
 
-# ================= Sequence Types ========== #
+# ================= 3.Sequence Types ========== #
 # These store multiple items in an ordered way.
 
 # a. String (str) A sequence of characters enclosed in quotes.
@@ -58,6 +59,17 @@ my_tuple: tuple = (1, 2, 3, "AI", 2.71, False, .3 , 3+2j )
 print(type(my_tuple), " my_tuple = ", my_tuple )  # 
 
      
-# 5.Dictionary Dictionary (dict) Stores key-value pairs.
+# ============ 4.Dictionary Dictionary (dict) Stores key-value pairs. =============
+
 my_dict: dict = {"name": "Alice", "age": 25, "language": "Python"}
 print(type(my_dict))
+
+# =================== 5 Set ================= #
+# 5. Set Unordered collections with unique elements.
+# Mutable, unordered, and contains unique values.
+my_set: set = {1, 2, 33, 4, 4, 5}
+ 
+# b. Frozen Set (frozenset) Immutable version of a set.
+frozen_set = frozenset([11, 2, 3, 4, 4, 5])
+
+ 
