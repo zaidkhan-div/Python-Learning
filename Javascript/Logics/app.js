@@ -15,5 +15,23 @@ function calculateArea(length, width) {
     const calculateArea = length * width;
     return calculateArea;
 }
-let result = calculateArea(2, -3);
-console.log(result)
+// let result = calculateArea(2, -3);
+
+// function findSmallestInt(arr) {
+//     let Smallest = arr[0];
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] < Smallest) {
+//             Smallest = arr[i]
+//         }
+//     }
+//     return Smallest
+// }
+// console.log(findSmallestInt([34, 15, 88, 2]), "Smallest Number")
+
+// var findMedianSortedArrays = function (nums1, nums2) {
+//     const mergedArray = [...nums1, ...nums2];
+//     return mergedArray
+// };
+
+// const result = findMedianSortedArrays([1, 2], [3, 4]);
+// console.log(result)
