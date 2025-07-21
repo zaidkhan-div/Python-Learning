@@ -1,3 +1,5 @@
+// false, 0, "", null, undefined, and NaN. Javascript consider them false  
+
 // function addTwoNums(a, b) {
 //     const addTwoNums = a + b;
 //     console.log('Sum of two is', addTwoNums)
