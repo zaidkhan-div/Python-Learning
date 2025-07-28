@@ -55,3 +55,10 @@ const locations = [
   }
 ];
 console.log(locations["button text"[0]]);
+
+
+let numbers = [23,35,56,3,12,4,5,7,2,6,7,1];
+while(numbers.length<10){
+  numbers.push(Math.floor(Math.random()*10))
+}
+console.log(numbers.length)
