@@ -54,11 +54,38 @@ const locations = [
     text: "You enter the store."
   }
 ];
-console.log(locations["button text"[0]]);
+// console.log(locations[1]["button text"]);
 
 
-let numbers = [23,35,56,3,12,4,5,7,2,6,7,1];
-while(numbers.length<10){
-  numbers.push(Math.floor(Math.random()*10))
+let numbers = [23, 35, 56, 3, 12, 4, 5, 7, 2, 6, 7, 1];
+while (numbers.length < 10) {
+  numbers.push(Math.floor(Math.random() * 10))
 }
 console.log(numbers.length)
+
+
+function checkInstanceOf(param1) {
+  if (param1 instanceof Object) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+console.log(checkInstanceOf(new Date()))
+
+
+let firsName = ['Zaid', 'Anus', 'Salman', 'Zain', 'Taousef'];
+let lastName = ['Khan', 'Afridi', 'Karim', 'Afridi', 'Ali'];
+let fullName = [];
+
+for (let i = 0; i < firsName.length; i++) {
+  for (let j = 0; j < lastName.length; j++) {
+    fullName.push(firsName[i] + lastName[j])
+  }
+  // fullName.push(firsName[i] + lastName[i])
+}
+console.log(fullName)
+
+const text = "The New Yorker magazine doesn't allow the phrase World War II They say it should be the Second World War."

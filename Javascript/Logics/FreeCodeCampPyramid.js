@@ -78,3 +78,9 @@ function studentMsg(totalScores, studentScore) {
   }
 }
 
+
+let nums = [12,4,45,6,4,34,45,56,45,23,3,5,6,8,8,2];
+let random = Math.floor(Math.random() * nums.length);
+console.log(nums[random],"Random");
+
+// null is a special value in JavaScript that represents the absence of a value. This can happen when you try to access a property of an object that doesn't exist.
