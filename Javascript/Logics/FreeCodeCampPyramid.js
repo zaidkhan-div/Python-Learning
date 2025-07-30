@@ -23,6 +23,36 @@
 // }
 // padRow();
 // console.log(result);
+// ========================== XxX ================= //
+
+// for (let i = 1; i <= count; i++) {
+//     // rows.push(character.repeat(2 * i - 1));
+//     const space = " ".repeat(count - i)
+//     const char = character.repeat(2 * i - 1)
+//     const row = space + char;
+//     rows.push(row);
+//     if (i <= 7) {
+//         result += rows[i - 1] + "\n";
+//     } else {
+//         result += rows[i - 1];
+//     }
+//     // result += rows[i - 1] + "\n";
+// }
+
+// =========================== Reversed Order ============= //
+
+// for (let i = 1; i <= count; i++) {
+//     rows.unshift(character.repeat(2 * i - 1));
+//     // result += rows[i - 1] + "\n";
+// }
+// for (const row of rows) {
+//     result += row + "\n"
+// }
+
+// console.log(rows[0]);
+// console.log(result)
+
+
 
 // =================== Factorial ================ 
 

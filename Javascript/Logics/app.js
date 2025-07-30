@@ -56,6 +56,15 @@ const locations = [
 ];
 // console.log(locations[1]["button text"]);
 
+// let arr = {
+//     name: "ZaidKhan",
+//     secondObj: {
+//         age: 18
+//     }
+// };
+
+// let { secondObj: { age } } = arr;
+// console.log(age)
 
 let numbers = [23, 35, 56, 3, 12, 4, 5, 7, 2, 6, 7, 1];
 while (numbers.length < 10) {
@@ -86,6 +95,13 @@ for (let i = 0; i < firsName.length; i++) {
   }
   // fullName.push(firsName[i] + lastName[i])
 }
-console.log(fullName)
+// console.log(fullName);
 
-const text = "The New Yorker magazine doesn't allow the phrase World War II They say it should be the Second World War."
+let text = "The New Yorker magazine doesn't allow the phrase World War II They say it should be the Second World War.";
+for (let i = 0; i < text.length; i++) {
+  // const word = text.slice(i, i + 12);
+  // if (word === "World War II") {
+  //   text = text.slice(0, i) + "the Second World War" + text.slice(i + 12);
+  // }
+}
+console.log(text);
