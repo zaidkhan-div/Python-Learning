@@ -105,3 +105,22 @@ for (let i = 0; i < text.length; i++) {
   // }
 }
 console.log(text);
+
+
+
+let arr = [1, [1234, ["Inside"]]];
+const [item, [item2, [item3]]] = arr
+console.log(item3);
+
+
+let str = "Zaid khan is removing all the spacing from this string";
+let outPut = str.split(/\s+/).join(' ');
+
+// for (let i = 0; i < str.length; i++) {
+//     if (str[i] === " ") {
+//         outPut += str[i + 1];
+//     } else {
+//         outPut += str[i];
+//     }
+// };
+console.log(outPut);
