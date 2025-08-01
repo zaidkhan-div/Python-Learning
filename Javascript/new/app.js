@@ -87,13 +87,19 @@ let findMedianSortedArrays = (nums1, nums2) => {
     let newArr = [...nums1, ...nums2];
     // let output = [];
     let output;
-    for (let i = 0; i < newArr.length; i++) {
-        // output.push(newArr[i]);
-        if (i < newArr.length / 2) {
-            output = newArr[i] + newArr[i + 1];
-        }
+    // Find the mid num of an array
+    for (let i = 0; i < newArr.length / 2; i++) {
+        output = newArr[i]
     }
+    // This plus the mid nums of an array
+    // for (let i = 0; i < newArr.length; i++) {
+    //     // output.push(newArr[i]);
+    //     if (i < newArr.length / 2) {
+    //         output = newArr[i] + newArr[i + 1]; 
+    //     }
+    // }
+
     return output
 };
 
-console.log(findMedianSortedArrays([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]))
+findMedianSortedArrays([1, 2], [3]);
