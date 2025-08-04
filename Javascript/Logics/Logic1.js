@@ -43,6 +43,7 @@ function smallestThree3(a, b, c) {
 // ========= reversedString ==========
 
 function reversed(str) {
+    if (typeof str !== "string") throw new Error("Only string allowed")
     let result = "";
     for (let i = str.length - 1; i >= 0; i--) {
         result += str[i]
@@ -50,4 +51,13 @@ function reversed(str) {
     return result
 }
 
-console.log(reversed("Zaidkhan"))
+// console.log(reversed('Zaidkhan'))
+
+function reversed2(str) {
+    let splittedArray = str.split("");
+    let reverse = splittedArray.reverse();
+    let result = splittedArray.join("");
+    return result
+}
+
+console.log(reversed2("Zaidkhan"))
