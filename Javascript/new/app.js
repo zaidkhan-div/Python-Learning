@@ -67,7 +67,7 @@ let result = ""
 // // };
 // console.log(outPut);
 
-// ========== Today LeetCode
+// ========== LeetCode
 
 // let absMath = -10;
 // let output = Math.abs(absMath); 
