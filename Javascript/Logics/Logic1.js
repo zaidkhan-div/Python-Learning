@@ -1,3 +1,12 @@
+let a = 5;
+let b = 10;
+
+let temp = a;
+a = b;
+b = temp;
+
+console.log(a, b)
+
 function findSmallestThree(a, b, c) {
     // if (a < b && a < c) {
     //     return a
@@ -60,4 +69,12 @@ function reversed2(str) {
     return result
 }
 
-console.log(reversed2("Zaidkhan"))
+// console.log(reversed2("Zaidkhan"));
+
+let todosData = [1, 2, 4, 5, 6, 7, 8, 9];
+
+let completionScore = todosData;
+if (true) {
+    let calculateRate = (completionScore.length / todosData.length) * 100;
+}
+console.log(calculateRate)
