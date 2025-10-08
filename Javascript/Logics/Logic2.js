@@ -34,7 +34,7 @@ function countVowels(data) {
 }
 
 const numberOfVowels = countVowels(str);
-// console.log(numberOfVowels);
+// console.log(numberOfVowels, "Vowels");
 
 
 
@@ -73,4 +73,15 @@ for (const x of stringArr) {
 
 const checkingTrue = false;
 const checkresult = !!checkingTrue;// !! this will return boolean for anyValues
-console.log(checkresult, "CheckResult"); 
+// console.log(checkresult, "CheckResult"); 
+
+// Find leap year 
+
+function isLeapYear(year) {
+  if (typeof year !== "number") {
+    throw new Error("Must be a Number object");
+  }
+  const result = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+  return result;
+}
+console.log(isLeapYear(2026))
