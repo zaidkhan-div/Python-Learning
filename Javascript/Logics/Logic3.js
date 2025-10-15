@@ -43,21 +43,51 @@ var puzzle = [
 //     return result;
 // }
 
+function isValid(puzzle, row, col, num) {
+    // checking row
+    for (let i = 0; i < 9; i++) {
+        if (puzzle[row][i] === num) return false;
+    }
+    // checking col
+    for (let i = 0; i < 9; i++) {
+        if (puzzle[i][col] === num) return false;
+    }
+
+    // Check 3x3 box - ADD THIS HERE
+    let boxRow = Math.floor(row / 3) * 3;
+    let boxCol = Math.floor(col / 3) * 3;
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            if (puzzle[boxRow + i][boxCol + j] === num) return false;
+        }
+    }
+
+    return true;
+}
+
 function solve(puzzle) {
-    let solve = [...puzzle];
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let result = [];
-    for (let row = 0; row < arr.length; row++) {
-        for (let col = 0; col < arr.length; col++) {
+    for (let row = 0; row < 9; row++) {
+        for (let col = 0; col < 9; col++) {
             if (puzzle[row][col] === 0) {
-                let m = Math.floor(Math.random() * 9);
-                result.push(m);
-            } else {
-                result.push(puzzle[row][col])
+                for (let num = 1; num <= 9; num++) {
+                    if (isValid(puzzle, row, col, num)) {
+                        puzzle[row][col] = num;
+
+                        if (solve(puzzle)) return true; // Recursion - solving the rest
+
+                        puzzle[row][col] = 0;
+                    }
+                }
+                return false;
             }
         }
     }
-    return result;
+    return true;
 }
 
-console.log(solve(puzzle));
+function sudoku(puzzle) {
+    solve(puzzle);
+    return puzzle
+}
+
+console.log(sudoku(puzzle));
