@@ -17,7 +17,7 @@ function calculateFactusingRecursion(num) {
   }
   return num * calculateFactorial(num - 1)
 }
-console.log(calculateFactorial(6));
+// console.log(calculateFactorial(6));
 
 
 // ======== vowels Count =====
@@ -52,7 +52,7 @@ function sayGoodbye() {
 function sum(num1, num2) {
   "use strict";
   num1 = 10;
-  num2 = 5; // here we can overwrite the arguments untill we use strit mode
+  num2 = 5; // here we can overwrite the arguments untill we use strict mode
   return arguments[0] + arguments[1];
 }
 // console.log(sum(2, 3), "Sum-Func");
