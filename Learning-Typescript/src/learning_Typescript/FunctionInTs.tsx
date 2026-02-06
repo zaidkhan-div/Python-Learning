@@ -1,11 +1,10 @@
 // there are less types for function in typescript 
 // there are 2 types for function either return or not 
 
-function makeChai(type: string, cups: number) {
+function makeChai(type: string, cups: number): void {
     console.log(`Making ${cups} of ${type}`);
 }
 makeChai("Flavour", 1);
-
 
 function learnReturnType(): number { // this will return in number formate 
     // return "String not allowed"
@@ -21,6 +20,6 @@ function loggerFucn(): void { // we are not returning anything
     console.log("function is ready");
 }
 
-function optianlDefaultPara(type?:string){ // ? optional
-    return "Zaidkhan";  
+function optianlDefaultPara(type?: string) { // ? optional
+    return "Zaidkhan";
 }
