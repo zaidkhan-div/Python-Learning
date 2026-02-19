@@ -1,4 +1,4 @@
-# 🚀 Python Learning Repository
+# 🚀 Learning Repository
 
 > *A personal journey through programming languages and technologies*
 
